@@ -1,0 +1,102 @@
+<!-- Created by Jose Andres Silva Hirane (student #21206490) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head created by Jose Andres Silva Hirane (student #21206490) -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<link rel="icon" type="Montessori" href="images/montessori-icon.jpg" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/jose.css">-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/bootstrap.min.js"></script>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("webNav");
+			if (x.className === "topnav") {
+			  x.className += " responsive";
+			} else {
+			  x.className = "topnav";
+			}
+		  }
+	</script>
+</head>
+<body>
+    <header class="full-reset header">
+		<div class="topnav" id="webNav">
+			<a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="Education.html">Education</a>
+            <a href="services.html">Services</a>
+            <a href="media.html">Gallery</a>
+            <a href="FormEnrolling.html">Now Enrolling</a>
+            <a href="contact.html">Contact</a>
+
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+	</header>
+
+    <!-- Contact container -->
+    <section class="full-reset" style="min-height: 850px;">
+		<h2 class="text-center titles">Contact form and map</h2>
+		  <p class="text-center lead">
+		  	You can contact us through the following form or visiting us.
+		  </p>
+		
+		<!--======================================== Info. ========================================-->
+		<div class="container">
+    		<div class="col-lg-6">
+				<form action="send.php" method="post" name="form" class="was-validated">
+						<input type="text" name="name" placeholder="Parent/ Guardian full name" required>
+						<input type="text" name="name" placeholder="Child full name" required>
+						<input type="email" name="email" placeholder="Email" required>
+						<input type="text" name="phone" placeholder="Phone number" required>
+						<input type="text" name="phone" placeholder="Other phone number">
+						<textarea name="text" placeholder="Left here your message" required></textarea>
+						<input type="submit" value="Send" id="button">
+				</form>
+			</div>
+			<div class="col-lg-6">
+      			<div class="map">
+			    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9524.33592474472!2d-6.263763486108271!3d53.35965192000929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e7dadf3a38d%3A0x341f611fad2a60fc!2sRotunda%2C%20Dublin%201%2C%20D01%20C2F6!5e0!3m2!1ses!2sie!4v1670945410231!5m2!1ses!2sie" width="600" height="470" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			    </div>
+    		</div>
+		</div>					
+	</section>       
+    </body>
+
+    <!-- Footer created by Jose Andres Silva Hirane (student #21206490) -->
+
+<footer class="full-reset footer">
+    <div class="full-reset" style="padding: 15px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <h4 class="titles text-center">Visit us</h4>
+                    <p class="text-center">9, Saint Clement's Road</p>
+                    <p class="text-center">Dublin</p>
+                    <p class="text-center">D01 C2F6</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h4 class="titles text-center">WEB Development Final CA</h4>
+                    <p class="titles text-center">Web created by:</p>
+                    <p class="titles text-center">Jose Andres Silva</p>
+                    <p class="titles text-center">Sabrina Rosa</p>
+                    <p class="titles text-center">Erica de Almeida</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h4 class="titles text-center">Contact us</h4>
+                    <p class="text-center">Phone: (353) 2881-9026 <br><E-mail>contact@gmail.com</E-mail></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

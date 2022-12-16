@@ -1,0 +1,293 @@
+<!-- Page created by Erica Pereira - Student ID ( x21185999 )  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icon at the browser -->
+    <link rel="icon" type="Montessori" href="images/montessori-icon.jpg" />
+
+    <title> Enrolling Preschool </title>
+
+     <!-- links boostrap -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap1.min.css">
+   
+       <!-- CSS created by Erica links -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript created by Erica links -->
+    <script src="js/indexForm.js"></script>
+
+</head>
+<script>
+    function myFunction() {
+        var x = document.getElementById("webNav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+</script>
+<body id="body-form">
+    <header class="full-reset header">
+        <div class="topnav" id="webNav">
+
+        	<a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="Education.html">Education</a>
+            <a href="services.html">Services</a>
+            <a href="media.html">Gallery</a>
+            <a href="FormEnrolling.html">Now Enrolling</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+    </header>
+
+    <div class="container-form">
+        <h1> Enrollment Form </h1>
+
+        <form class="formEn" action="thankyou.html" name="enro_form" onsubmit="return enrollingValidate()">
+            <div class="first-form">
+                <div class="detailes-child">
+                    <spam class="title"> Child's details </spam>
+
+                    <div class="fields">
+                        <div class="input-fields">
+                            <label for="firstname" class="request"> First Name </label>
+                            <input type="text" name="firstname" placeholder="Enter first name"  minlength="3" maxlength="20">
+
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="milddlename" class="request"> Middle Name </label>
+                            <input type="text" name="middlename" placeholder="Enter middle name" minlength="1" maxlength="20">
+
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="lastname" class="request"> Last Name </label>
+                            <input type="text" name="lastname" placeholder="Enter last name" minlength="3" maxlength="30">
+
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="birth" class="request"> Date of Birth</label>
+                            <input type="date" name="birth" min="2015-01-01" max="2030-12-31">
+
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="address" class="request"> Street Address </label>
+                            <input type="text" name="address">
+
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="address2"> Street Address 2 </label>
+                            <input type="text" name="address2">
+
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="city"> City/Town </label>
+                            <input type="text" name="city">
+
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="county"> County </label>
+                            <input type="text" name="county">
+
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="postcode"> Postcode </label>
+                            <input type="text" name="postal">
+
+                        </div>
+
+
+
+                        <div class="gender-group">
+                            <spam class="gender-title"> Gender </spam>
+
+                            <div class="input-gender">
+                                <input id="gender" type="radio" name="gender" value="Female">
+                                <label for="gender"> Female</label>
+                            </div>
+
+                            <div class="input-gender">
+                                <input id="gender" type="radio" name="gender" value="Male">
+                                <label for="gender"> Male</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="second-form">
+                <div class="detailes-parents">
+                    <spam class="title"> Parents/Guardians informations </spam>
+
+                    <div class="fields">
+
+                        <div class="input-fields">
+                            <label for="pfirstname" class="request"> First Name </label>
+                            <input type="text" name="pfirstname" placeholder="Enter first name" minlength="3" maxlength="20">
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="plastname" class="request"> Last Name </label>
+                            <input type="text" name="plastname" placeholder="Enter last name" minlength="1" maxlength="20">
+
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="relationship" class="request">Relationship </label>
+                            <input type="text" name="relationship" placeholder="Relationship" minlength="1" maxlength="10">
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="phone" class="request"> Phone number </label>
+                            <input type="tel" name="phone" placeholder="(000) 000-0000" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="workphone"> Work number </label>
+                            <input type="tel" name="workphone" placeholder="(000) 000-0000">
+
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="email" class="request"> E-mail </label>
+                            <input type="email" name="email" placeholder="email@gmail.com">
+
+                        </div>
+
+                        <hr width="100%">
+
+
+                        <div class="input-fields">
+                            <label for="efirstname"> First Name </label>
+                            <input type="text" name="efirstname" placeholder="Enter first name">
+
+
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="elastname"> Last Name </label>
+                            <input type="text" name="elastname" placeholder="Enter last name">
+
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="erelationship">Relationship </label>
+                            <input type="text" name="erelationship" placeholder="Relationship">
+
+
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="ephone"> Phone number </label>
+                            <input type="tel" name="ephone" placeholder="(000) 000-0000">
+
+
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="workphone"> Work number </label>
+                            <input type="tel" name="workphone" placeholder="(000) 000-0000">
+                        </div>
+
+                        <div class="input-fields">
+                            <label for="eemail"> E-mail </label>
+                            <input type="email" name="eemail" placeholder="email@gmail.com">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="attendance">
+                <spam class="title"> Attendance informations </spam>
+
+                <div class="input-fields">
+                    <label for="date"> Expected start date </label>
+                    <input id="expected" type="date" name="date" min="2023-01-01" max="2030-12-31">
+
+                </div>
+
+                <div class="input-fields">
+                    <label for="time"> Attendance </label>
+                    <select name="time" id="attendance">
+                        <option value="option"> Select option </option>
+                        <option value="ECCE"> ECCE </option>
+                        <option value="Halfday"> Half day </option>
+                        <option value="fullday"> Full day </option>
+                    </select>
+                </div>
+
+
+                <div class="input-field">
+                    <spam class="title"> Would you like to add something? </spam>
+                    <textarea id="texarea" rows="6" cols="100" name="comment" id="comment" minlength="0" maxlength="300"> Type here...</textarea>
+                </div>
+            </div>
+
+            <div class="register-btn">
+                <a href="thankyou.html"><input type="submit" class="button_active" value="Submit"></a>
+
+            </div>
+    </div>
+
+    </form>
+    </div>
+
+
+
+</body>
+<footer class="full-reset footer">
+    <div class="full-reset" style="padding: 15px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <h4 class="titles text-center">Visit us</h4>
+                    <p class="text-center">9, Saint Clement's Road</p>
+                    <p class="text-center">Dublin</p>
+                    <p class="text-center">D01 C2F6</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h4 class="titles text-center">WEB Development Final CA</h4>
+                    <p class="titles text-center">Web created by:</p>
+                    <p class="titles text-center">Jose Andres Silva</p>
+                    <p class="titles text-center">Sabrina Rosa</p>
+                    <p class="titles text-center">Erica de Almeida</p>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h4 class="titles text-center">Contact us</h4>
+                    <p class="text-center">Phone: (353) 2881-9026 <br>
+                        <E-mail>contact@gmail.com</E-mail>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+</html>
